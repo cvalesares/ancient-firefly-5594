@@ -8,3 +8,10 @@ Sport: <%= @competition.sport %><p>
 <% end %>
 
 Average player age: <%= Competition.average_player_age %>
+
+Register Team:
+<%= form_with url: "/competitions/#{@competition.id}/teams", method: :get, local: true do |f|  %>
+  <%= f.label :name %>
+  <%= f.text_field :nickname %>
+  <%= f.submit "Submit" %>
+<% end %>
