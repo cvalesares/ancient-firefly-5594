@@ -36,17 +36,3 @@ RSpec.describe "Competition Show Page" do
     expect(page).to have_content(@team3.nickname)
   end
 end
-
-# User Story 3 - Register a Team
-#
-# As a user
-# When I visit a competition's show page
-# Then I see a text field to enter a team name
-# When I fill in this field with the name of an existing team
-# And I click the submit button
-# Then the team with the name that I submitted is associated with this competition
-# And I am redirected back to the competition's show page
-# And I see that the team is now listed among the other teams in the competition
-#
-# (Note: you do not need to handle any sad paths, for example if the name entered does not match an existing team)
-# ```

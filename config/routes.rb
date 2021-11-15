@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   get "/teams", to: "teams#index"
 
   get "/competitions/:competition_id", to: "competitions#show"
+
   get "/competitions/:competition_id/teams", to: "competition_teams#new"
-  # patch "/competitions/:competition_id", to: "competitions#update"
 end
