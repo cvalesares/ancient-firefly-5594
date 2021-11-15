@@ -1,0 +1,12 @@
+<h3>Teams:</h3> <p>
+
+<% @teams.each do |team| %>
+<div id="id-<%=team.id%>">
+  <h4>Team Name:<%= team.nickname %><p></h4>
+  Hometown:<%= team.hometown %><p>
+    <% team.players.each do |player| %>
+    Player:<%= player.name %><p>
+    Age:<%= player.age %><p>
+  <% end %>
+<% end %>
+<div>
